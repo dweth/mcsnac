@@ -37,7 +37,7 @@ date = datetime.datetime.now().strftime("%m_%d_%Y_%H_%M_%S")
 os.makedirs(date)
 os.chdir(date)
 os.system('cp ../new_align.f ./')
-os.system('cp ../Monte_Carlo_temp_depn_step_May_2016.f ./')
+os.system('cp ../Monte_Carlo.f ./')
 
 
 ##Compile the fortran scripts.  This is done early in the script in order to prevent the
@@ -53,7 +53,7 @@ if os.path.isfile("new_align.out"):
 else:
 	sys.exit("The script was unable to compile the fortran code.  If your computer prompts you to install Command Line Developer Tools, please do so and then restart the program.  If you have not already installed gfortran, please do so as well.")
 
-os.system("gfortran -llapack -lblas Monte_Carlo_temp_depn_step_May_2016.f -o Monte_Carlo.out")
+os.system("gfortran -llapack -lblas Monte_Carlo.f -o Monte_Carlo.out")
 
 #np.lookfor('f2py')
 
@@ -63,14 +63,14 @@ os.system("gfortran -llapack -lblas Monte_Carlo_temp_depn_step_May_2016.f -o Mon
 #with open("new_align.f90") as sourcefile:
 #    sourcecode = sourcefile.read()
 #np.f2py.compile(sourcecode, modulename='new_align',extra_args = '--fcompiler=gfortran')
-#with open("Monte_Carlo_temp_depn_step_May_2016.f") as sourcefile:
+#with open("Monte_Carlo.f") as sourcefile:
 #	sourcecode = sourcefile.read()
 #np.f2py.compile(sourcecode, modulename='Monte_Carlo',extra_args = '--fcompiler=gfortran')
 
 #import new_align
 #import Monte_Carlo
 #f2py -m -c new_align 'new_align.f'
-#f2py -c -lblas -llapack Monte_Carlo.out Monte_Carlo_temp_depn_step_May_2016.f
+#f2py -c -lblas -llapack Monte_Carlo.out Monte_Carlo.f
 
 
 ##Define fcsextract function
