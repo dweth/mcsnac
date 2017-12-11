@@ -3,7 +3,7 @@
 The Single Cell Signaling Network Analysis Code, or Single Cell SNAC, is a set of files designed to allow anyone to analyze signaling network kinetics of interest from large mass cytometry datasets.  It utilizes Simulated Annealing to propose a first-order reaction network between molecules of interest.  NOTE: THIS CODE IS ONLY CURRENTLY FUNCTIONAL ON MAC OS X.
 
 # Table of Contents
-*[Quick Start](#Quick-Start)
+*[Quick Start](#quick-qtart)
 *[Repository Contents](#Repository-Contents)
 *[Installing Gfortran](#Installing-Gfortran)
 *[Detailed Tutorial](#Detailed-Tutorial)
