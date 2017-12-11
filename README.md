@@ -4,9 +4,9 @@ The Single Cell Signaling Network Analysis Code, or Single Cell SNAC, is a set o
 
 # Table of Contents
 *[Quick Start](#quick-start)
-*[Repository Contents](#Repository-Contents)
-*[Installing Gfortran](#Installing-Gfortran)
-*[Detailed Tutorial](#Detailed-Tutorial)
+*[Repository Contents](#repository-contents)
+*[Installing Gfortran](#installing-gfortran)
+*[Detailed Tutorial](#detailed-tutorial)
 
 # Quick Start
 1. Make sure you have gfortran downloaded (see "Installing Gfortran").
@@ -35,8 +35,8 @@ You’ll see several options for installers.  Select the one that corresponds to
 INSERT LINKS TO PHOTOS HERE.
 
 # Detailed Tutorial
-*[Before Starting](#Before-Starting)
-*[Running the Program](#Running-the-Program)
+*[Before Starting](#before-starting)
+*[Running the Program](#running-the-program)
 
 # Before Starting
 Make sure all of the following are true before you utilize the software:
