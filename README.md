@@ -2,20 +2,20 @@
 
 The Single Cell Signaling Network Analysis Code, or Single Cell SNAC, is a set of files designed to allow anyone to analyze signaling network kinetics of interest from large mass cytometry datasets.  It utilizes Simulated Annealing to propose a first-order reaction network between molecules of interest.  NOTE: THIS CODE IS ONLY CURRENTLY FUNCTIONAL ON MAC OS X.
 
-# Table of Contents
-*[Quick Start](#quick-start)
-*[Repository Contents](#repository-contents)
-*[Installing Gfortran](#installing-gfortran)
-*[Detailed Tutorial](#detailed-tutorial)
-*[Viewing Results After Completion](#viewing-results-after-completion)
+## Table of Contents
+*[Quick Start](#quick-start) 
+*[Repository Contents](#repository-contents) 
+*[Installing Gfortran](#installing-gfortran) 
+*[Detailed Tutorial](#detailed-tutorial) 
+*[Viewing Results After Completion](#viewing-results-after-completion) 
 
-# Quick Start
+## Quick Start
 1. Make sure you have gfortran downloaded (see "Installing Gfortran").
 2. Open a Terminal (/Applications/Utilities/Terminal).
 3. Drag and drop the downloaded file "drag_me_to_terminal.py" to the Terminal and press Enter.
 4. Follow the program's instructions.
 
-# Repository Contents
+## Repository Contents
 The documents contained in this repository include:
 1. README
    -Contains instructions for downloading necessary prerequisites, running the software, and other notes.
@@ -26,17 +26,16 @@ The documents contained in this repository include:
 4. Monte_Carlo.f
    -This file executes the Simulated Annealing scheme.
    
-# Installing Gfortran
+## Installing Gfortran
 Install gfortran using the following link: https://gcc.gnu.org/wiki/GFortranBinaries
 
 You’ll see several options for installers.  Select the one that corresponds to your operating system and follow all instructions for installation.
 
-# Detailed Tutorial
-*[Before Starting](#before-starting)
-
+## Detailed Tutorial
+*[Before Starting](#before-starting) 
 *[Running the Program](#running-the-program)
 
-# Before Starting
+### Before Starting
 Make sure all of the following are true before you utilize the software:
 
 1. You have downloaded gfortran.  See [Installing Gfortran](#installing-gfortran).
@@ -47,11 +46,11 @@ Make sure all of the following are true before you utilize the software:
 
 Now you are ready to start the program!  The instructions below detail how to do this.
 
-# Running the Program
+### Running the Program
 
 1.	Open a Terminal.  This is done by opening the Finder, going to the Applications folder, opening the Utilities folder, and double clicking on “Terminal”. 
 
-A screen similar to that shown below should appear.  This is the Terminal.
+   A screen similar to that shown below should appear.  This is the Terminal.
 
 2.	Locate the file titled “drag_me_to_terminal.py” that was downloaded from GitHub.  Drag and drop this file into the Terminal.
 
@@ -69,10 +68,10 @@ A screen similar to that shown below should appear.  This is the Terminal.
 
 9.	Once complete, you may view the values of the flux between network connections by hovering over the arrows you drew previously.
 
-10.	The final results are created in a folder named after the time you began the simulation.  The flux values can be found in the file titled “final_fluxes.csv”.  
+10. The final results are created in a folder named after the time you began the simulation.  The flux values can be found in the file titled “final_fluxes.csv”.  
 
 
-# Viewing Results After Completion
+## Viewing Results After Completion
 
 When you run the software, it automatically creates a folder of the exact datetime the program began.  For example, if the program was started at 1:05:30 p.m. on October 20th, 2016, you would see a folder titled something like "10_20_2016_13_05_30" in the folder containing the file drag_me_to_terminal.py.
 
