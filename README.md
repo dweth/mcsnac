@@ -7,6 +7,7 @@ The Single Cell Signaling Network Analysis Code, or Single Cell SNAC, is a set o
 *[Repository Contents](#repository-contents)
 *[Installing Gfortran](#installing-gfortran)
 *[Detailed Tutorial](#detailed-tutorial)
+*[Viewing Results After Completion](#viewing-results-after-completion)
 
 # Quick Start
 1. Make sure you have gfortran downloaded (see "Installing Gfortran").
@@ -14,17 +15,15 @@ The Single Cell Signaling Network Analysis Code, or Single Cell SNAC, is a set o
 3. Drag and drop the downloaded file "drag_me_to_terminal.py" to the Terminal and press Enter.
 4. Follow the program's instructions.
 
-# Repository Contents (Eventually Needs Edit)
+# Repository Contents
 The documents contained in this repository include:
-1. Before Running
-   -These are instructions for installing and downloading all the necessary prerequisites to run the software.
-2. Instructions
-   -These are instructions as to how to use the code once you have the necessary prerequisites.
-3. drag_me_to_terminal.py
+1. README
+   -Contains instructions for downloading necessary prerequisites, running the software, and other notes.
+2. drag_me_to_terminal.py
    -This file is the main file of the program.  It executes much of the code, and calls the other scripts in the repository.
-4. new_align.f
+3. new_align.f
    -This file organizes the necessary files in a new directory.  It "preps" for the Simulated Annealing scheme.
-5. Monte_Carlo.f
+4. Monte_Carlo.f
    -This file executes the Simulated Annealing scheme.
    
 # Installing Gfortran
@@ -32,16 +31,15 @@ Install gfortran using the following link: https://gcc.gnu.org/wiki/GFortranBina
 
 You’ll see several options for installers.  Select the one that corresponds to your operating system and follow all instructions for installation.
 
-INSERT LINKS TO PHOTOS HERE.
-
 # Detailed Tutorial
 *[Before Starting](#before-starting)
+
 *[Running the Program](#running-the-program)
 
 # Before Starting
 Make sure all of the following are true before you utilize the software:
 
-1. You have downloaded gfortran.  See "Installing Gfortran".
+1. You have downloaded gfortran.  See [Installing Gfortran](#installing-gfortran).
 2. You have 2 .fcs files that you would like to analyze.
    2b. You know the time after t=0 the data were collected (e.g. 8 minutes and 16 minutes).
 3. You have a signaling network to analyze in mind.
@@ -74,5 +72,12 @@ A screen similar to that shown below should appear.  This is the Terminal.
 10.	The final results are created in a folder named after the time you began the simulation.  The flux values can be found in the file titled “final_fluxes.csv”.  
 
 
+# Viewing Results After Completion
 
-If desired, these can be visualized fairly easily using the free, open-source software CytoScape. 
+When you run the software, it automatically creates a folder of the exact datetime the program began.  For example, if the program was started at 1:05:30 p.m. on October 20th, 2016, you would see a folder titled something like "10_20_2016_13_05_30" in the folder containing the file drag_me_to_terminal.py.
+
+If you enter this folder, you will find a file "final_fluxes.csv" for any completed computation.  This contains the results of the analysis in a format readable by Microsoft Excel.
+
+If desired, the results in "final_fluxes.csv" can be visualized fairly easily using the free, open-source software [CytoScape].  
+
+[CytoScape]: http://www.cytoscape.org/
