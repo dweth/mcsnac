@@ -374,9 +374,9 @@ class ListDialog(tk.Frame):
             if boo==1:
                 final_list.append(proteins[i])
                 
-#        fid=open("protein_list.txt","w")
-#        for protein in final_list:
-#            fid.write("%s " % protein)
+        fid=open("protein_list.txt","w")
+        for protein in final_list:
+            fid.write("%s " % protein)
 
         root.destroy()
         
@@ -665,6 +665,21 @@ with open("final_fluxes.csv",'w') as f:
     writer.writerows(zipped)
 
 ######################## end create_flux_file.py ####################################
+
+## Create an organized directory with any relevent results for the user
+
+if not os.path.exists("Final Results"):
+    os.makedirs("Final Results")
+
+os.system('cp ./final_fluxes.csv ./Final\ Results/')
+os.system('cp ./chi.txt ./Final\ Results/')
+os.system('cp ./filename.txt ./Final\ Results/')
+os.system('cp ./time.txt ./Final\ Results/')
+os.system('cp ./avg_new.txt ./Final\ Results/')
+os.system('cp ./protein_list.txt ./Final\ Results/')
+os.system('cp ./*_min.txt ./Final\ Results/')
+
+
 
 ## Display the network with the fluxes back to the user
 
