@@ -140,6 +140,6 @@ If you forget which data files you analyzed, the filenames and their paths can b
 Additionally, the times entered by the user for the data can be found in "time.txt".  
 
 ### Data
-The data itself for the proteins of interest can be viewed by opening the files named after the times (e.g. 8_min.txt and 16_min.txt).  The averages of these data can be seen in the file "avg_new.txt".  The order of these data columns is in the order they appear in the file "proteins.txt".
+The data itself for the proteins of interest can be viewed by opening the files named after the times (e.g. 8_min.txt and 16_min.txt).  The averages of these data can be seen in the file "avg_new.txt".  The order of these data columns is in the order they appear in the file "protein_list.txt".
 
 [CytoScape]: http://www.cytoscape.org/
