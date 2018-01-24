@@ -337,6 +337,10 @@ del proteins[-1]
 del proteins[0]
 del proteins[-1]
 
+# Sort the proteins in alphabetical order.  Save the index order for later use.
+proteins2 = proteins.sort()
+sorted_indx = proteins.argsort()
+
 status = []
 checked = []
 final_list = []
@@ -359,7 +363,7 @@ class ListDialog(tk.Frame):
 
 
         i=0
-        for protein in proteins:
+        for protein in proteins2:
             status.append(tk.IntVar(value=0))
             checkbox = tk.Checkbutton(self,text=protein,variable=status[i])
             
@@ -372,7 +376,7 @@ class ListDialog(tk.Frame):
             checked.append(i.get())
         for i,boo in enumerate(checked):
             if boo==1:
-                final_list.append(proteins[i])
+                final_list.append(proteins2[i])
                 
         fid=open("protein_list.txt","w")
         for protein in final_list:
