@@ -337,9 +337,8 @@ del proteins[-1]
 del proteins[0]
 del proteins[-1]
 
-# Sort the proteins in alphabetical order.  Save the index order for later use.
+# Sort the proteins in alphabetical order
 proteins2 = proteins.sort()
-sorted_indx = proteins.argsort()
 
 status = []
 checked = []
