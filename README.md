@@ -1,6 +1,6 @@
 # single-cell-snac
 
-The Single Cell Signaling Network Analysis Code, or Single Cell SNAC, is a set of files designed to allow anyone to analyze signaling network kinetics of interest from large mass cytometry datasets.  It utilizes Simulated Annealing to propose a first-order reaction network between molecules of interest.  NOTE: THIS CODE IS ONLY CURRENTLY FUNCTIONAL ON MAC OS X.
+The Mass Cytometry Signaling Network Analysis Code, or McSNAC, is a set of files designed to allow anyone to analyze signaling network kinetics of interest from large mass cytometry datasets.  It utilizes Simulated Annealing to propose a first-order reaction network between molecules of interest.  NOTE: THIS CODE IS ONLY CURRENTLY FUNCTIONAL ON MAC OS X.
 
 ## Table of Contents
 * [Quick Start](#quick-start) 
@@ -81,7 +81,7 @@ A screen similar to that shown below should appear.  This is the Terminal.
 
 3.	Go to the Terminal and press the “Enter” key.  This will begin running the software. (From here on, the software will guide you through using it)
 
-If you see the following screen, click the "Install" button to install Command Line Developer Tools.  This may happen the first time you run the program; if so, simply re-run it by pressing the [up] key and then [enter] in the Terminal.
+If you see the following screen, click the "Install" button to install Command Line Developer Tools.  This may happen the first time you run the program; if so, you will need to re-run the program.  You can do this by simply pressing the [up] key and then [enter] in the Terminal, or dragging the file "drag_me_to_terminal.py" to the Terminal again.
 
 ![alt tag](http://planetx.nationwidechildrens.org/~jayajit/software_pics/Developer_Tools_Install.png)
 
