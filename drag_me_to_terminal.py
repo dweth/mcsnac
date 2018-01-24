@@ -338,7 +338,7 @@ del proteins[0]
 del proteins[-1]
 
 # Sort the proteins in alphabetical order
-proteins2 = proteins.sort()
+proteins2 = sorted(proteins, key=str.lower)
 
 status = []
 checked = []
