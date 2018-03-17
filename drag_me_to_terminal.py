@@ -337,6 +337,9 @@ del proteins[-1]
 del proteins[0]
 del proteins[-1]
 
+# Sort the proteins in alphabetical order
+proteins2 = sorted(proteins, key=str.lower)
+
 status = []
 checked = []
 final_list = []
@@ -359,7 +362,7 @@ class ListDialog(tk.Frame):
 
 
         i=0
-        for protein in proteins:
+        for protein in proteins2:
             status.append(tk.IntVar(value=0))
             checkbox = tk.Checkbutton(self,text=protein,variable=status[i])
             
@@ -372,11 +375,11 @@ class ListDialog(tk.Frame):
             checked.append(i.get())
         for i,boo in enumerate(checked):
             if boo==1:
-                final_list.append(proteins[i])
+                final_list.append(proteins2[i])
                 
-#        fid=open("protein_list.txt","w")
-#        for protein in final_list:
-#            fid.write("%s " % protein)
+        fid=open("protein_list.txt","w")
+        for protein in final_list:
+            fid.write("%s " % protein)
 
         root.destroy()
         
@@ -665,6 +668,21 @@ with open("final_fluxes.csv",'w') as f:
     writer.writerows(zipped)
 
 ######################## end create_flux_file.py ####################################
+
+## Create an organized directory with any relevent results for the user
+
+if not os.path.exists("Final Results"):
+    os.makedirs("Final Results")
+
+os.system('cp ./final_fluxes.csv ./Final\ Results/')
+os.system('cp ./chi.txt ./Final\ Results/')
+os.system('cp ./filename.txt ./Final\ Results/')
+os.system('cp ./time.txt ./Final\ Results/')
+os.system('cp ./avg_new.txt ./Final\ Results/')
+os.system('cp ./protein_list.txt ./Final\ Results/')
+os.system('cp ./*_min.txt ./Final\ Results/')
+
+
 
 ## Display the network with the fluxes back to the user
 
